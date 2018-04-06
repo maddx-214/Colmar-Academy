@@ -1,0 +1,662 @@
+html {
+  font-family: 'Oswald';
+  font-size: 16px;
+  line-height: 1.75rem;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  background-color: #001FFF;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.logo-container img {
+  height: 2.5rem;
+  margin-left: 24px;
+  margin-right: 2.5px;
+}
+
+.logo-container span,
+.logo-container p {
+  font-family: 'Volkhov';
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  display: inline-block;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.logo-container span {
+  font-weight: bold;
+  color: darkgrey;
+}
+
+.logo-container p {
+  font-weight: normal;
+  color: lightgray;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0rem;
+  text-align: center;
+  line-height: 45px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+  padding-top: 0.3rem;
+  letter-spacing: 1.33px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0px 8px;
+  margin-bottom: 0.75rem;
+  padding-top: 0.3rem;
+}
+
+.main-banner-text h4,
+.info-banner h4,
+.right-column h4 {
+  margin-left: 0rem;
+}
+
+p {
+  font-family: 'Raleway';
+  font-size: 22px;
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  padding-right: 1rem;
+}
+
+nav span {
+  color: white;
+  padding: 0px 8px;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+#mobile-nav img {
+  opacity: 0.55;
+}
+
+#mobile-nav img:hover {
+  opacity: 1;
+  transition: opacity, 0.4s, ease, 0.2s;
+}
+
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  font-weight: bold;
+  transition: ease 100ms;
+  text-shadow: 2px 2px #505050;
+}
+
+.main-banner,
+.info-banner,
+.course-banner,
+.thesis-banner {
+  display: flex;
+}
+
+.main-banner,
+.info-banner,
+.course-banner,
+.thesis-banner {
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.course-banner {
+  background-color: #dcdcdc;
+}
+
+.main-banner {
+  background-color: #dcdcdc;
+}
+
+.info-banner {
+  background-color: white;
+}
+
+.main-banner-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 24px;
+}
+
+.main-banner-text h2 {
+  text-shadow: 2px 2px #505050;
+  text-align: left;
+  margin-left: 24px;
+}
+
+.main-banner-text h4 {
+  text-align: left;
+  margin-left: 24px;
+}
+
+#button {
+  margin-top: 1rem;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 12px 0px;
+  margin-right: 1rem;
+  margin-left: 24px;
+  width: 80%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#button:hover {
+  background-color: #001FFF;
+  transition: background-color, 0.5s, ease-out, .3s;
+  border-radius: 10px;
+  text-shadow: 2px 2px #505050;
+}
+
+.banner-img,
+.left-content,
+.video-content {
+  min-width: 60%;
+  width: 60%;
+}
+
+.main-banner img,
+.info-banner .left-content img {
+  width: 100%;
+}
+
+.left-content p {
+  line-height: 30px;
+}
+
+.left-content h2 {
+  margin: 32px 0 24px 0;
+}
+
+.left-content span {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+#mobile-banner-img {
+  display: none;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.right-content a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #001FFF;
+  margin-top: .5rem;
+}
+
+.right-content a:hover {
+  font-weight: bold;
+  transition: ease 100ms;
+}
+
+.right-content img,
+#fisma img, #research img {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  margin: 16px 16px;
+}
+
+#mobile-orientation-img,
+#mobile-campus-img,
+#mobile-lecture-img {
+  display: none;
+}
+
+#fisma img, #research img {
+  height: auto;
+}
+
+.orientation img {
+  margin-top: 16px;
+}
+
+.right-content .orientation-text,
+.campus-text, .guest-text,
+.fisma-text, .research-text {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-content h4 {
+  font-size: 1.5rem;
+}
+
+.orientation,
+.campus,
+.guest-lecture {
+  display: flex;
+  border: 1px solid #001FFF;
+  margin: 0px 12px;
+  background-color: #dcdcdc;
+}
+
+.course-banner,
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-banner h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.courses {
+  width: 100%;
+  justify-content: center;
+}
+
+#software-engineering, #computer-art, #design,
+#data, #business, #marketing {
+  width: 28%;
+  z-index: 5;
+  margin: 0.5rem 0.4rem;
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
+#software-engineering:hover, #computer-art:hover,
+#design:hover, #data:hover, #business:hover,
+#marketing:hover {
+  box-shadow: 5px 5px 8px #505050;
+  transition: box-shadow, 1s, ease, 0.3s;
+  border: .5px solid #001FFF;
+}
+
+.courses p {
+  opacity: 0.70;
+}
+
+.courses h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.courses img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.video-content h4 {
+  margin: 10px 0px;
+}
+
+.courses p {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.thesis-banner,
+.video-content,
+.right-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thesis-banner h4 {
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.title h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.right-column h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info-banner .right-content p,
+.thesis-banner .right-column p {
+  padding-right: 0.5rem;
+}
+
+#fisma, #research {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  border: 1px solid #001FFF;
+  margin: 8px 12px;
+  background-color: #dcdcdc;
+}
+
+#fisma img, #fisma,
+#research img, #research {
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.thesis-banner .video-column p {
+  margin-left: 24px;
+}
+
+footer {
+  display: flex;
+  background-color: #001FFF;
+  border-top: 1px solid #505050;
+  justify-content: space-between;
+}
+
+footer p {
+  color: white;
+  font-family: 'Oswald';
+  padding: 0px 24px;
+  margin: 3rem 0rem;
+}
+
+.terms-privacy:hover {
+  font-weight: bold;
+  transition: ease 100ms;
+  text-shadow: 2px 2px #505050;
+}
+
+@media only screen and (max-width: 700px) {
+  #text-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #mobile-nav a {
+    padding: 0rem 0.4rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    line-height: 1.2rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+ #mobile-nav {
+    padding: 0rem 0rem
+  }
+}
+
+@media only screen and (max-width: 485px) {
+
+  html {
+    width: 100%;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  #logo {
+    display: flex;
+  }
+
+  #mobile-nav {
+    width: 100%;
+  }
+
+  #mobile-nav img {
+    height: 2.33rem;
+  }
+
+  header {
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+}
+
+.main-banner {
+    flex-direction: column;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+    align-items: center;
+  }
+
+  .main-banner .banner-img {
+    width: 100%;
+  }
+
+  .banner-img img {
+    display: none;
+  }
+
+  #mobile-banner-img {
+    display: flex;
+  }
+
+  .main-banner-text {
+    width: 100%;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  #button {
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 32px 0px;
+    padding-bottom: -1rem;
+    text-align: center;
+  }
+
+  .main-banner h4 {
+    font-size: 1rem;
+    padding-top: 0px;
+    padding: 0rem 1rem;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .info-banner {
+    padding: 16px 16px;
+    margin-bottom: 16px;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .right-content,
+  .right-content .orientation, .orientation-text,
+  .right-content .campus, .campus-text,
+  .right-content .guest-lecture, .guest-text {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .right-content img {
+    display: none;
+  }
+
+  #mobile-orientation-img,
+  #mobile-campus-img,
+  #mobile-lecture-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 16px 0px;
+  }
+
+  .right-content h4, .right-content p, .right-content span {
+    margin-left: 16px;
+    padding: 1rem 0rem;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .right-content p {
+    margin: 12px 16px;
+    font-size: 1.2rem;
+  }
+
+  .course-banner p,
+  .course-banner img {
+    display: none;
+  }
+  .course-banner {
+    padding: 16px;
+    background-color: white;
+  }
+
+  .course-banner h2 {
+    font-size: 2rem;
+  }
+
+  .courses {
+    flex-direction: column;
+  }
+
+  #software-engineering, #computer-art,
+  #design, #data, #business, #marketing {
+    width: 100%;
+    margin: 4px 0px;
+    padding-bottom: 0px;
+    background-color: #dcdcdc;
+  }
+
+  .course-banner h3 {
+    margin-bottom: 16px;
+  }
+
+  .courses h4 {
+    padding: 0rem 0rem;
+    margin: 16px 16px;
+    font-weight: normal;
+  }
+
+  .thesis-banner {
+    padding: 0px 16px;
+    margin-bottom: 32px;
+  }
+
+  .thesis-banner .right-column,
+  .thesis-banner h4, .thesis-banner p {
+      display: none;
+  }
+
+  .thesis-banner .video-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    margin-top: 16px;
+  }
+
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  footer .terms-privacy {
+    display: none;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+}
